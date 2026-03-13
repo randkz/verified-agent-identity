@@ -26,8 +26,7 @@ jobs:
           node-version: '20'
 
       - name: Step 1 - Install ClawHub skill
-        run: |
-           npx clawhub@latest install verified-agent-identity --force
+        run: npx clawhub@latest install verified-agent-identity --force
 
       - name: Install script dependencies
         run: |
@@ -39,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "randkz", "description": "randkz AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "asclaw", "description": "randkz AI Agent"}'
